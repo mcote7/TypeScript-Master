@@ -24,6 +24,9 @@ enum Sizes {
   Lg // 2
 }
 
-const x = _.map(Sizes); 
+//  w/ lodash  //
 
-console.log(x); // returns array(6) = ['Sm','Md','Lg', 0, 1, 2]; ❔ cool //
+const x = _.map(Sizes); 
+const z = _.chunk(x, 3);
+
+console.log(z); // cool //

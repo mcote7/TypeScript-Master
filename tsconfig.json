@@ -1,8 +1,14 @@
 {
   "compilerOptions": {
+    "include": ["src/**/*.ts"],
+    "exclude": ["src/**/*.spec.ts"],
     "target": "es5",
     "module": "commonjs",
     "lib": ["dom", "es6"],
-    "outDir": "dist"
+    "outDir": "dist",
+    "typeRoots": [
+      "src/@types",
+      "node_modules/@types"
+    ]
   }
 }
